@@ -3,11 +3,12 @@
 Vous trouverez ci-dessous des liens et précisions sur différents projets sur lesquels j'ai travaillé.  
 N'hésitez pas à y jeter un coup d'œil ! ⚆⚆
 
-### 📜 Sommaire
-#### 1. [Scripting Project](#scripting)
-#### 2. [Infrastructure construction](#infra)
+## 📜 Sommaire
+### 1. [Scripting Project](#scripting)
+### 2. [Infrastructure construction](#infra)
+### 3. [Homelab](#homelab)
 
-## 🖥️ 1. Scripting Project
+## </> 1. Scripting Project
 <span id="scripting"></span>
 
 Vous retrouverez le dépôt de ce projet scripting [ici](https://github.com/Azortix/Scripting-project#)  
@@ -48,5 +49,24 @@ Ce projet m'a permis de me familiariser avec Proxmox, et surtout de profiter d'u
 
 
 
+## 🖥️ 3. Homelab
+<span id="homelab"></span>
+Je monte un homelab complet me permettant d'utiliser des outils divers, de m'amuser, et de continuer de découvrir un tas de nouveaux outils.  
 
+J'utilise l'hyperviseur Proxmox VE qui me permet de créer des VM et LXC selon mes envies.  
+Voici les différents dépots des documentations du projet global :  
 
+### 🤖 3.1 Home Assistant
+Durant ce projet, je me suis interessé à Home Assistant. Il s'agit d'une plateforme open-source de domotique qui permet de contrôler, centraliser et automatiser les appareils d’une maison intelligente.
+
+Compatible avec de nombreux appareils et ecosystèmes. Tout se fait localement, sans dépendance au cloud.
+
+Le dépôt propose une approche complète :
+
+**Déploiement** : Guides d'installation manuelle et automatisée par script.  
+**Sécurisation** : Gestion des accès et chiffrement.  
+**Continuité de service** : Mise en place d'une stratégie de sauvegarde hebdomadaire automatisée et externalisée.  
+**Automatisation** : Création de scénarios pour le confort et une meilleure gestion énergétique.  
+Au-delà de la maîtrise de l'écosystème IoT, ce projet développe ma capacité à architecturer une solution robuste et sécurisée.  
+
+L'accès au dépôt se fait [ici](github.com/Azortix/Home_Assistant_OS).
