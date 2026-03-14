@@ -7,6 +7,10 @@ N'hésitez pas à y jeter un coup d'œil ! ⚆⚆
 ### 1. [Scripting Project](#scripting)
 ### 2. [Infrastructure construction](#infra)
 ### 3. [Homelab](#homelab)
+#### 3.1 [Home Assistant](#HAOS)
+#### 3.2 [Création de CA et certificats](#CA)
+#### 3.3 [Proxy Squid](#Squid)
+
 
 ## </> 1. Scripting Project
 <span id="scripting"></span>
@@ -54,12 +58,13 @@ Ce projet m'a permis de me familiariser avec Proxmox, et surtout de profiter d'u
 Je monte un homelab complet me permettant d'utiliser des outils divers, de m'amuser, et de continuer de découvrir un tas de nouveaux outils.  
 
 J'utilise l'hyperviseur Proxmox VE qui me permet de créer des VM et LXC selon mes envies.  
-Voici les différents dépots des documentations du projet global :  
+Voici les différents dépôts des documentations du projet global :  
 
 ### 🤖 3.1 Home Assistant
-Durant ce projet, je me suis interessé à Home Assistant. Il s'agit d'une plateforme open-source de domotique qui permet de contrôler, centraliser et automatiser les appareils d’une maison intelligente.
+<span id="HAOS"></span>
+Durant ce projet, je me suis intéressé à Home Assistant. Il s'agit d'une plateforme open-source de domotique qui permet de contrôler, centraliser et automatiser les appareils d’une maison intelligente.
 
-Compatible avec de nombreux appareils et ecosystèmes. Tout se fait localement, sans dépendance au cloud.
+Compatible avec de nombreux appareils et écosystèmes. Tout se fait localement, sans dépendance au cloud.
 
 Le dépôt propose une approche complète :
 
@@ -69,4 +74,44 @@ Le dépôt propose une approche complète :
 **Automatisation** : Création de scénarios pour le confort et une meilleure gestion énergétique.  
 Au-delà de la maîtrise de l'écosystème IoT, ce projet développe ma capacité à architecturer une solution robuste et sécurisée.  
 
-L'accès au dépôt se fait [ici](github.com/Azortix/Home_Assistant_OS).
+L'accès au dépôt se fait [ici](https://github.com/Azortix/Home_Assistant_OS).
+
+
+
+### 📋 3.2 Création de CA et certificats
+<span id="CA"></span>
+
+Dans ce projet, j’ai mis en place une **Autorité de Certification interne** (CA) et créé des certificats pour **sécuriser les machines et les services** au sein d’une infrastructure d’entreprise.
+
+Une CA est essentielle pour établir un système de confiance entre les machines et les services internes. Elle permet d’approuver les machines pour l’accès aux VPN, serveurs internes, emails ou proxies, tout en garantissant la sécurité des communications.
+
+Grâce à ce projet, j’ai pu :
+
+- comprendre le fonctionnement et l’importance d’une CA interne
+- créer et sécuriser des certificats pour les machines et services internes
+- automatiser l’installation de la CA sur les postes clients via GPO Active Directory
+- approfondir mes compétences en cryptographie et sécurité réseau
+
+Ce projet m’a permis de renforcer ma **compréhension des mécanismes de sécurité réseau et d’authentification**, essentiels dans un environnement professionnel.
+
+Le dépôt contenant la documentation de ce projet se retrouve [ici](https://github.com/Azortix/CA_-_Certificat)
+
+
+### 🦑 3.3 Proxy Squid
+<span id="Squid"></span>
+
+Dans ce projet, j’ai déployé et configuré un proxy web Squid sur un pare-feu OPNsense afin de centraliser et contrôler l’accès Internet d’un réseau local.  
+
+Un proxy de type Forward Proxy est fréquemment utilisé dans les infrastructures d’entreprise pour filtrer la navigation web, appliquer des politiques de sécurité et centraliser les journaux de trafic.  
+
+L’objectif de ce projet était de comprendre le fonctionnement d’un proxy, de mettre en place un filtrage d’accès aux sites web et d’intégrer ce service dans une infrastructure réseau.  
+
+Dans ce cadre, j’ai réalisé :  
+- l’installation et la configuration du service Squid  
+- la mise en place de listes de contrôle d’accès (ACL) pour filtrer certains domaines  
+- la configuration des règles de pare-feu nécessaires au fonctionnement du proxy  
+- le déploiement automatique du proxy sur les postes clients via une GPO Active Directory  
+
+Ce projet m’a permis de renforcer mes compétences en administration réseau, gestion du trafic web et intégration de services dans un environnement Active Directory.  
+
+Le dépôt est accessible [ici](https://github.com/Azortix/Squid)
