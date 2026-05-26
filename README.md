@@ -10,6 +10,7 @@ N'hésitez pas à y jeter un coup d'œil ! ⚆⚆
 #### 3.1 [Home Assistant](#HAOS)
 #### 3.2 [Création de CA et certificats](#CA)
 #### 3.3 [Proxy Squid](#Squid)
+#### 3.4 [Vaultwarden](#Vaultwarden)
 
 
 ## </> 1. Scripting Project
@@ -115,3 +116,21 @@ Dans ce cadre, j’ai réalisé :
 Ce projet m’a permis de renforcer mes compétences en administration réseau, gestion du trafic web et intégration de services dans un environnement Active Directory.  
 
 Le dépôt est accessible [ici](https://github.com/Azortix/Squid)
+
+
+
+### 🔒 3.4 Vaultwarden
+<span id="Vaultwarden"></span>
+
+Les gestionnaires de mot de passe permettent l'utilisation (et la génération) de mot de passe complexes et sécurisés, sans craindre l'oubli ou la perte de ceux-ci.  
+J'ai donc voulu déployer un gestionnaire de mot de passe auto-hébergé, afin ne pas les avoir sur le cloud et d'en être 100% maître.  
+Ce projet décrit Vaultwarden, un gestionnaire de mot de passe compatible avec Bitwarden, l'un des géants du domaine; son déploiement et utilisation au quotidien.
+
+Dans ce cadre, j’ai réalisé :  
+- l’installation de Docker
+- le déploiement de l'image Vaultwarden  
+- la mise en place d'un service auto-hébergé 
+
+Ce projet a développé mes compétences en réseau et port forwarding, en services auto-hébergé et les conséquences de ce que cela implique, ainsi que pour mon utilisation de docker compose, un outil de déploiement et de gestion efficace.
+
+[Lien d'accès au dépot du projet](https://github.com/Azortix/Vaultwarden)
