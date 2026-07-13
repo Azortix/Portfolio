@@ -134,3 +134,27 @@ Dans ce cadre, j’ai réalisé :
 Ce projet a développé mes compétences en réseau et port forwarding, en services auto-hébergé et les conséquences de ce que cela implique, ainsi que pour mon utilisation de docker compose, un outil de déploiement et de gestion efficace.
 
 [Lien d'accès au dépot du projet](https://github.com/Azortix/Vaultwarden)
+
+### 🍓 3.5 Pi-hole & Unbound
+<span id="Pi-hole"></span>
+
+Dans ce projet, j’ai déployé une solution complète de filtrage DNS et de résolution récursive pour sécuriser et accélérer la navigation de l'ensemble du réseau local.
+
+L'objectif est de bloquer les publicités et les traceurs au niveau DNS sans passer par des résolveurs DNS public, garantissant la confidentialité des requêtes.
+
+Ce projet combine deux outils complémentaires :
+
+**Pi-hole** : Agit comme un "sinkhole" (terme utilisé par le projet fondateur) pour les publicités, les domaines malveillants ainsi que les trackers, offrant une visibilité complète sur le trafic DNS du réseau.  
+**Unbound** : Fonctionne comme un résolveur DNS récursif, la fonctionnalité DNSSEC assure que les réponses DNS sont authentiques et non altérées.   
+
+Dans ce cadre, j’ai réalisé :
+
+Le déploiement des deux services sur leurs conteneurs LXC dédiés.  
+La configuration de Pi-hole pour utiliser Unbound comme serveur DNS forwarder.  
+La mise en place de listes de blocage personnalisées pour améliorer la protection.   
+L'analyse des tableaux de bord et du trafic.  
+La mise en place de mesures de sécurité, comme le 2FA.  
+
+Ce projet montre ma capacité à améliorer la sécurité réseau passive, à gérer le trafic DNS de manière autonome et à protéger la vie privée des utilisateurs.  
+
+Le dépôt contenant la documentation et les fichiers de configuration est accessible [ici](https://github.com/Azortix/Pi-hole).
