@@ -11,6 +11,7 @@ N'hésitez pas à y jeter un coup d'œil ! ⚆⚆
 #### 3.2 [Création de CA et certificats](#CA)
 #### 3.3 [Proxy Squid](#Squid)
 #### 3.4 [Vaultwarden](#Vaultwarden)
+#### 3.5 [Pi-hole & Unbound](#Pi-hole)
 
 
 ## </> 1. Scripting Project
