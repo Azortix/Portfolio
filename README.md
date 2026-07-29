@@ -12,6 +12,7 @@ N'hésitez pas à y jeter un coup d'œil ! ⚆⚆
 #### 3.3 [Proxy Squid](#Squid)
 #### 3.4 [Vaultwarden](#Vaultwarden)
 #### 3.5 [Pi-hole & Unbound](#Pi-hole)
+#### 3.6 [Nginx Proxy Manager](#NPM)
 
 
 ## </> 1. Scripting Project
@@ -150,12 +151,29 @@ Ce projet combine deux outils complémentaires :
 
 Dans ce cadre, j’ai réalisé :
 
-Le déploiement des deux services sur leurs conteneurs LXC dédiés.  
-La configuration de Pi-hole pour utiliser Unbound comme serveur DNS forwarder.  
-La mise en place de listes de blocage personnalisées pour améliorer la protection.   
-L'analyse des tableaux de bord et du trafic.  
-La mise en place de mesures de sécurité, comme le 2FA.  
+- Le déploiement des deux services sur leurs conteneurs LXC dédiés.  
+- La configuration de Pi-hole pour utiliser Unbound comme serveur DNS forwarder.  
+- La mise en place de listes de blocage personnalisées pour améliorer la protection.   
+- L'analyse des tableaux de bord et du trafic.  
+- La mise en place de mesures de sécurité, comme le 2FA.  
 
 Ce projet montre ma capacité à améliorer la sécurité réseau passive, à gérer le trafic DNS de manière autonome et à protéger la vie privée des utilisateurs.  
 
 Le dépôt contenant la documentation et les fichiers de configuration est accessible [ici](https://github.com/Azortix/Pi-hole).
+
+
+## 🌐 3.6 Nginx Proxy Manager
+<span id="NPM"></span>
+
+Dans le cadre de mon infrastructure Homelab, je souhaitais centraliser l'accès à mes multiples services auto-hébergés (Proxmox, Home Assistant, Vaultwarden, etc.) tout en garantissant une sécurité de niveau professionnel. Le défi principal était de remplacer les accès directs par IP et ports par des noms de domaine lisibles et sécurisées, tout en gérant la complexité des certificats SSL et de la résolution DNS.
+
+Au sein de ce projet, j’ai réalisé :
+
+- Le déploiement d'un conteneur léger sous Proxmox VE pour une faible utilisation des ressources.  
+- La mise en place d'un certificat Wildcard permettant la création de nombreux sous domaines.  
+- La création et gestion d'un certificat SSL Let's Encrypt via DNS.  
+- L'ajout de divers hôtes de proxy, redirigeant vers les services correspondants.
+
+Ce projet montre ma capacité à gérer la centralisation de multiples services au sein d'une infrastructure, tout en les rendant sûrs et sécurisés pour les utilisateurs.  
+
+[Lien du dépôt dédié au projet NPM](https://github.com/Azortix/Nginx-Proxy-Manager)
